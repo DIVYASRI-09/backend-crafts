@@ -1,12 +1,13 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello Tina";
+        return "🎨 Backend Crafts API is running! | Endpoints: GET /products | POST /product | DELETE /product/{name}";
     }
 }
